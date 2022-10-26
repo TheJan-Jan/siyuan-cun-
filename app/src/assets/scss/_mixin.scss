@@ -1,3 +1,4 @@
+*{font-family:LXGW WenKai}
 @mixin text-clamp($line: 2) {
   word-break: break-all;
   -webkit-line-clamp: $line;
