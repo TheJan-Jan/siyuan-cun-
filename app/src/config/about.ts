@@ -172,7 +172,7 @@ export const about = {
         <span class="fn__space"></span>
         <span class="ft__on-surface">${window.siyuan.languages.slogan}</span>
         <span class="fn__space"></span>
-        <span style="color:var(--b3-theme-background);font-family: cursive;">会泽百家&nbsp;至公天下</span>
+        <span style="color:var(--b3-theme-background);font-family: cursive;">坚持&nbsp;在坚持</span>
     </div>
     <div class='fn__hr'></div>
     ${window.siyuan.languages.about1}
