@@ -107,7 +107,7 @@ export const exitSiYuan = () => {
             confirmDialog(window.siyuan.languages.tip, response.msg, () => {
                 fetchPost("/api/system/exit", {
                     force: true,
-                    execInstallPkg: 2 //  0：默认检查新版本，1：不执行新版本安装，2：执行新版本安装
+                    execInstallPkg: 1 //  0：默认检查新版本，1：不执行新版本安装，2：执行新版本安装
                 }, () => {
                     /// #if !BROWSER
                     ipcRenderer.send(Constants.SIYUAN_CONFIG_CLOSETRAY);
@@ -258,13 +258,13 @@ export const bootSync = () => {
 export const setTitle = (title: string) => {
     const dragElement = document.getElementById("drag");
     if (title === window.siyuan.languages.siyuanNote) {
-        const versionTitle = title + " v" + Constants.SIYUAN_VERSION;
+        const versionTitle = title;
         document.title = versionTitle;
         dragElement.textContent = versionTitle;
         dragElement.setAttribute("title", versionTitle);
     } else {
         title = title || "Untitled";
-        document.title = title + " - " + window.siyuan.languages.siyuanNote + " v" + Constants.SIYUAN_VERSION;
+        document.title = title;
         dragElement.textContent = title;
         dragElement.setAttribute("title", title);
     }
