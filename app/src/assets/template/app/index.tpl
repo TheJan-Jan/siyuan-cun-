@@ -5,6 +5,7 @@
     <!-- https://electronjs.org/docs/tutorial/security#csp-meta-tag
     <meta http-equiv="Content-Security-Policy" content="script-src 'self'"/>-->
     <style id="editorFontSize" type="text/css"></style>
+    <link rel="stylesheet" href="https://npm.elemecdn.com/lxgw-wenkai-webfont@1.1.0/lxgwwenkai-regular.css" />
     <style id="editorAttr" type="text/css"></style>
 </head>
 <body class="fn__flex-column">
