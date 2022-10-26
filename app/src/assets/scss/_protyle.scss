@@ -3,6 +3,7 @@
 @import "wysiwyg";
 @import "search";
 
+*{font-family:LXGW WenKai}
 .protyle-scroll {
   position: absolute;
   right: -80px;
@@ -243,7 +244,7 @@
     font-size: 80px;
     line-height: 80px;
     text-align: center;
-    font-family: var(--b3-font-family-emoji);
+    font-family: LXGW WenKai;
     margin-right: 16px;
 
     img, svg {
