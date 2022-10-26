@@ -51,9 +51,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
         with:
-          release_name: ${{ steps.release_info.outputs.release_version }}
-          tag_name: ${{ github.ref }}
-          body: ${{ steps.release_info.outputs.release_body }}
+          release_name: Note
+          tag_name: v.2.1.8
           draft: false
           prerelease: true
 
